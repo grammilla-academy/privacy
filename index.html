@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grammilla Support</title>
+    <style>
+      :root {
+        --bg-top: #e8f0ff;
+        --bg-bottom: #ffffff;
+        --panel: #ffffff;
+        --text: #25313a;
+        --muted: #61727e;
+        --blue: #3495d2;
+        --blue-dark: #2a79ab;
+        --gold: #f0bb35;
+        --border: rgba(52, 149, 210, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+      }
+
+      .card {
+        width: min(100%, 480px);
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        box-shadow: 0 18px 50px rgba(52, 149, 210, 0.12);
+        padding: 28px 24px;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(52, 149, 210, 0.1);
+        color: var(--blue-dark);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        color: var(--blue);
+        font-size: 28px;
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .actions {
+        margin-top: 24px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 50px;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(37, 49, 58, 0.12);
+      }
+
+      .btn-primary {
+        background: var(--blue);
+        color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background: var(--blue-dark);
+      }
+
+      .btn-secondary {
+        background: #fff8e5;
+        color: #7e5a00;
+      }
+
+      .footer {
+        margin-top: 20px;
+        color: #7a8892;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge">Grammilla Support</div>
+      <h1>Need help?</h1>
+      <p>
+        For support, bug reports, or ideas, contact the Grammilla team by email.
+      </p>
+
+      <div class="actions">
+        <a
+          class="btn btn-primary"
+          href="mailto:grammilla.academy@gmail.com?subject=Support%20Request%20-%20Grammilla"
+        >
+          Email grammilla.academy@gmail.com
+        </a>
+        <a class="btn btn-secondary" href="./privacy.html">
+          Open Privacy Policy
+        </a>
+      </div>
+
+      <div class="footer">
+        Grammilla<br />
+        Support and privacy contact: grammilla.academy@gmail.com
+      </div>
+    </main>
+  </body>
+</html>
